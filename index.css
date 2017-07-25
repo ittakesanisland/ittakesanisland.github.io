@@ -2,16 +2,10 @@
     font-family: "myriad-pro", sans-serif;
 }
 
-
-/* label color */
-
 .input-field label {
     color: #956B9A;
     font-family: "myriad-pro", sans-serif;
 }
-
-
-/* label focus color */
 
 .input-field input[type=text]:focus+label,
 .input-field input[type=email]:focus+label {
@@ -19,8 +13,6 @@
     font-family: "myriad-pro", sans-serif;
 }
 
-
-/* label underline focus color */
 
 .input-field input[type=text]:focus,
 .input-field input[type=email]:focus {
