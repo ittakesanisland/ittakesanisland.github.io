@@ -1,0 +1,55 @@
+.input-field {
+    font-family: "myriad-pro", sans-serif;
+}
+
+
+/* label color */
+
+.input-field label {
+    color: #956B9A;
+    font-family: "myriad-pro", sans-serif;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label {
+    color: #956B9A;
+    font-family: "myriad-pro", sans-serif;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #BFA6C2;
+    box-shadow: 0 1px 0 0 #BFA6C2;
+    font-family: "myriad-pro", sans-serif;
+}
+
+.itai-btn,
+.itai-btn:hover,
+.itai-btn:active,
+.itai-btn:focus {
+    background-color: #956B9A;
+}
+
+.itai-body {
+    background-color: #F2F1E6;
+    height: 100%;
+}
+
+.itai-logo {
+    margin-top: 5%;
+}
+
+.itai-font {
+    font-family: 'kon-tiki-aloha-jf', sans-serif;
+}
+
+input[type]:-webkit-autofill {
+     box-shadow: 0 0 0px 1000px #F2F1E6 inset; 
+}
+
