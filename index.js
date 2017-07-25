@@ -3,15 +3,15 @@ $(function () {
 
         event.preventDefault();
 
-        // var sendData = {};
-        // $(event.target.nodeName + ' :input').each(function () {
-        //     sendData[this.name] = $(this).val();
-        // });
+        var sendData = {};
+        $(event.target.nodeName + ' :input').each(function () {
+            sendData[this.name] = $(this).val();
+        });
 
         var posting = $.ajax({
-            type: 'GET',
-            url: '//anisland.us16.list-manage.com/subscribe/post?u=c1e7bdef38644dcf234cc05d7&amp;id=94e9eed170&c=?',
-            data: $('form').serialize(),
+            type: 'POST',
+            url: '//anisland.us16.list-manage.com/subscribe/post-json?u=c1e7bdef38644dcf234cc05d7&amp;id=94e9eed170&c=JSON_CALLBACK',
+            data: sendData,
             dataType: 'jsonp'
         });
 
