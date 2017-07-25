@@ -16,14 +16,13 @@ $(function () {
         });
 
         posting.done(function (response) {
-            console.log(">S" + response);
+
             $('#alert-id').prop('hidden', false);
             $('form :input').each(function () {
                 $(this).val('');
             })
         });
         posting.fail(function (response) {
-            console.log(">F" + response);
         });
     });
 
