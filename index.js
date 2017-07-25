@@ -1,14 +1,12 @@
 $(function () {
-
-    // on submitting the form
     $('form').submit(function (event) {
-        // prevent the default action of reloading the page
+
         event.preventDefault();
 
-        var sendData = {};
-        $(event.target.nodeName + ' :input').each(function () {
-            sendData[this.name] = $(this).val();
-        });
+        // var sendData = {};
+        // $(event.target.nodeName + ' :input').each(function () {
+        //     sendData[this.name] = $(this).val();
+        // });
 
         var posting = $.ajax({
             type: 'POST',
